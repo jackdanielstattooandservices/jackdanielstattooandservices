@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Six+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap");
+
+:root {
+  --navbarColor: #ecae03;
+  --backgroundColor: #000000;
+  --footerColor: #020202;
+}
+
+html {
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(73, 73, 73));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* navbar */
+
+.logo img {
+  height: 120px;
+  width: 120px;
+}
+.nav-bar {
+  background-color: var(--navbarColor);
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
+  margin: 15px;
+}
+
+.nav-item ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 11px;
+}
+
+.nav-item ul li a:hover {
+  border-bottom: 1px solid #fff;
+}
+/* end of navbar */
+
+/* main */
+.main {
+  background: url(../img/mainBg.png);
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+}
+
+.main-items h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Orbitron", sans-serif;
+}
+
+.m-item {
+  padding-top: 65px;
+  font-size: 28px;
+  color: white;
+  text-shadow: 3px -3px #000000;
+}
+
+.about h1 {
+  padding: 20px 20px 5px 20px;
+  color: whitesmoke;
+  font-family: "Oswald", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  font-size: 30px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.separator {
+  width: 50px;
+  height: 3px;
+  background-color: #ecae03;
+  margin: 3px 0 20px 20px;
+}
+
+.sub p {
+  color: rgb(255, 255, 255);
+  text-align: justify;
+  margin: 20px;
+}
+
+.sub img {
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+}
+
+/* footer */
+
+.ftr {
+  background-color: black;
+  padding: 20px;
+}
+
+.ftr p {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+.ftr h6 {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 100;
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav-item ul li a {
+    font-size: 20px;
+  }
+
+  .sub {
+    display: flex;
+    margin: 0;
+    margin-top: 0;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .sub-sec {
+    margin: 50px;
+  }
+
+  .separator {
+    margin-left: 20px;
+  }
+
+  .about h1 {
+    margin-top: 50px;
+  }
+}
+
+/* laptop */
+
+@media (min-width: 1024px) {
+  .sub img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .sub p {
+    font-size: 24px;
+  }
+
+  .main-items h1 {
+    margin: -30px 20px 20px 20px;
+
+  }
+}
+
+/* desktop */
+@media (min-width: 1201px) {
+  .nav-item ul li a {
+    font-size: 24px;
+  }
+
+  .main {
+    background: url(../img/mainBg.png);
+    height: 50vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main-items h1 {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Orbitron", sans-serif;
+  }
+
+  .m-item {
+    padding-top: 110px;
+    font-size: 32px;
+    color: white;
+    text-shadow: 3px -3px #000000;
+    height: 1;
+  }
+
+  .sub img {
+    height: 350px;
+    width: 350px;
+  }
+
+  .sub p {
+    font-size: 28px;
+  }
+
+  .sub {
+    display: flex;
+    margin: 0;
+    margin-top: 0;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .sub-sec {
+    margin: 70px;
+  }
+
+  .separator {
+    margin-left: 20px;
+  }
+
+  .about h1 {
+    margin-top: 40px;
+    font-size: 36px;
+  }
+}
